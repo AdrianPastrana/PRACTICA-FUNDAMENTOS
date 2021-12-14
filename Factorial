@@ -1,0 +1,19 @@
+package org.practica.tres;
+
+import java.util.Scanner;
+
+public class Factorial {
+	public static void factorial(int n) {
+		int fact = 1;
+		for (int i = 1; i <= n; i++) {
+			fact = fact*i;
+		}
+		System.out.println("El factorial de " + n + " es " + fact);
+	}
+	public static void main(String[] args) {
+		Scanner tScanner = new Scanner(System.in);
+		System.out.println("Dame el número del cual quieres que saque el factorial");
+		int num = tScanner.nextInt();
+		factorial(num);
+	}
+}
