@@ -1,0 +1,21 @@
+package org.practica.uno;
+
+import java.util.Scanner;
+
+public class Areatriangulo {
+
+	public static void Area(double b, double h) {
+		double a= (b*h)/2;
+		System.out.println("Área es: " + a);
+	}
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Dame el tamaño de la base: ");
+		double base = teclado.nextDouble();
+		
+		System.out.println("Dame la altura: ");
+		double altura = teclado.nextDouble();
+		Area(base,altura);
+	}
+}
