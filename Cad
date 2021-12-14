@@ -1,0 +1,35 @@
+package org.practica.seis;
+
+import java.util.Scanner;
+
+public class Cad {
+	public static void Curp(String n, String app, String apm, int d, String m, int an) {
+		System.out.println("Nombre: " + n);
+		System.out.println("Apellido paterno: " + app);
+		System.out.println("Apellido materno: " + apm);
+		System.out.println("Fecha de nacimiento:" + d + "/" + m + "/" + an);
+		
+		System.out.println("CAD: "+ app.substring(0,2) + apm.charAt(0)+ n.charAt(0)
+		+ an + m + d );
+	}
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Ingresa tu nombre: ");
+		String nombre = teclado.next();
+		
+		System.out.println("Dame tu apellido paterno: ");
+		String appat = teclado.next();
+		
+		System.out.println("Dame tu apellido materna: ");
+		String apmat = teclado.next();
+		
+		System.out.println("Dame el día que naciste (2 digitos)");
+		int dia = teclado.nextInt();
+		System.out.println("Dame el día que mes que naciste  (2 digitos)");
+		String mes = teclado.next();
+		System.out.println("Dame el año que naciste  (2 digitos)");
+		int ano = teclado.nextInt();
+		
+		Curp(nombre, appat, apmat, dia, mes, ano);
+	}
+}
