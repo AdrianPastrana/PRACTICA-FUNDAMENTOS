@@ -1,0 +1,19 @@
+package org.practica.dos;
+
+import java.util.Scanner;
+
+public class Multiplicaciones {
+	public static void multi( int n) {
+		for (int i = 1; i <= 10; i++) {
+			int mul = n * i;
+			System.out.println(n + "x" + i + "= " + mul);	
+		}
+	}
+	public static void main(String[] args) {
+		Scanner t = new Scanner(System.in);
+		System.out.println("Ingresa el número que quieres que se multiplique");
+		int num = t.nextInt();
+		System.out.println("n ="+num);
+		multi(num);
+	}
+}
