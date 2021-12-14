@@ -1,0 +1,21 @@
+package org.practica.cinco;
+
+import java.util.Scanner;
+
+public class Numeroposoneg {
+	public static void respuesta(int n) {
+		if (n > 0) {
+			System.out.println("El número ingresado es positivo");
+		} else if (n == 0) {
+			System.out.println("El número ingresado es 0");
+		} else if (n < 0) {
+			System.out.println("El número ingresado es negativo");
+		}
+	}
+	public static void main(String[] args) {
+		Scanner tScanner = new Scanner(System.in);
+		System.out.println("Ingresa un número entero");
+		int num = tScanner.nextInt();
+		respuesta(num);
+	}
+}
