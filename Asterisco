@@ -1,0 +1,21 @@
+package org.practica.cuatro;
+
+import java.util.Scanner;
+
+
+public class Asterisco {
+	public static void Arbolito(String d) {
+		for (int i = 0; i < 10; i++) {
+			System.out.println(" ");
+			for(int k =0; k<i; k++) {
+				System.out.print(d);
+		    }
+		}
+	}
+	public static void main(String[] args) {
+		Scanner tScanner = new Scanner(System.in);
+		System.out.println("Ingresa el digito");
+		String dig = tScanner.next();
+		Arbolito(dig);
+	}
+}
