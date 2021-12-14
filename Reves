@@ -1,0 +1,17 @@
+package org.practica.siete;
+
+import java.util.Scanner;
+
+public class Reves {
+	public static void Voltear(String n) {
+		StringBuilder num2 = new StringBuilder(n);
+		n = num2.reverse().toString();
+		System.out.println(n);
+	}
+	public static void main(String[] args) {
+		Scanner tScanner = new Scanner(System.in);
+		System.out.println("Ingresa el número entero que deseas invertir: ");
+		String num = tScanner.next();
+		Voltear(num);
+	}
+}
